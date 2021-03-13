@@ -18,6 +18,7 @@ public class ModelTask {
     private String image_id;
     private String date;
 
+
     public ModelTask() {
     }
 
