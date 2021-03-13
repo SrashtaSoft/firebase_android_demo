@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265546285139",
+    "firebase_url": "https://uvpce-demo-bc3c0-default-rtdb.firebaseio.com",
+    "project_id": "uvpce-demo-bc3c0",
+    "storage_bucket": "uvpce-demo-bc3c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265546285139:android:835dbb897f889ce6cfc6a6",
+        "android_client_info": {
+          "package_name": "com.uvpce.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265546285139-tjf6nruohq2l6h4u1pt91rp3qdt970id.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzGzwhrxu7L5qhH7QZR86vc8bTOz08sDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265546285139-tjf6nruohq2l6h4u1pt91rp3qdt970id.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

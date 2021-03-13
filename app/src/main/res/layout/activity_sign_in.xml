@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/xEdtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:text="parth@gmail.com"
+            app:met_floatingLabel="normal"
+            android:hint="Email" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/xEdtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:text="123456"
+            app:met_floatingLabel="normal"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/xBtnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:inputType="textCapSentences"
+            android:textSize="20dp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/xBtnRegisterHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account? Click Here"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20sp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/xProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

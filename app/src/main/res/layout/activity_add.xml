@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Task"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/xEdtTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapSentences"
+            app:met_floatingLabel="normal"
+            android:hint="Task Name" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/xEdtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Task Description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left|center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date: "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/xTvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date: "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/xBtnCalender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:tint="@color/black"
+                    android:src="@drawable/ic_baseline_calendar_today_24"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xBtnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap here to select image"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/xIvSelectedImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/xBtnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:inputType="textCapSentences"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/xProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
